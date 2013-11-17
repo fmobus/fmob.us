@@ -12,8 +12,9 @@ Slim::Engine.set_default_options pretty: true, sort_attrs: false
 
 map '/assets' do
   environment = Sprockets::Environment.new
-  environment.append_path 'assets/javascripts'
-  environment.append_path 'assets/stylesheets'
+  environment.append_path 'assets/js'
+  environment.append_path 'assets/css'
+  environment.append_path 'assets/img'
   run environment
 end
 
