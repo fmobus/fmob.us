@@ -27,5 +27,9 @@ class Application < Sinatra::Base
     sass filename.to_sym, :views => "#{settings.root}/assets/css"
   end
 
+  get '/id_rsa.pub' do
+    File.read('assets/id_rsa.pub')
+  end
+
 end
 
