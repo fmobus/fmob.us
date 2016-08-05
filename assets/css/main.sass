@@ -1,7 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Averia+Libre)
 
+$phone: "(max-device-width : 600px)"
+
 body
   font-family: "Averia Libre", cursive
+  @media #{$phone}
+    margin: 0
 
 .clear
   clear: both
@@ -10,15 +14,30 @@ h1
   position: absolute
   font-size: 300%
   margin: 0
+  @media #{$phone}
+    font-size: 500%
+    width: 100%
+    position: fixed
+    top: 0
+    margin: 0
+    padding: 0.5em 0
+    background-color: grey
+    color: white
+    text-align: center
 
 h2
   font-size: 200%
+  @media #{$phone}
+    font-size: 400%
 
 #container
   width: 60%
   min-width: 400px
   margin: auto
   padding-top: 1px
+  @media #{$phone}
+    margin: 15% 0 0 0
+    width: 100%
 
 section
   margin-top: 1rem
@@ -27,20 +46,30 @@ section
     font-weight: bolder
     margin: 0
     padding: 0
+    @media #{$phone}
+      text-align: center
 
   .item
+    display: block
     float: left
     margin-right: 1rem
     text-decoration: none
+    text-align: center
     color: inherit
+    @media #{$phone}
+      width: 48%
+      padding-bottom: 1vh
+      .label
+        font-size: 200%
 
     img
       border-radius: 50%
       width: 130px
       height: 130px
+      @media #{$phone}
+        width: 20vh
+        height: 20vh
 
-    .label
-      text-align: center
 
 
 .social
@@ -48,6 +77,9 @@ section
   bottom: 10
   width: 25%
   margin: auto
+  @media #{$phone}
+    margin-left: 35%
+    text-align: center
 
   img
     vertical-align: top
