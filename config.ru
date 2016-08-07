@@ -8,6 +8,8 @@ require 'json'
 
 require "application"
 
+use Rack::ContentLength
+
 Slim::Engine.set_default_options pretty: true, sort_attrs: false
 
 map '/assets' do
