@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     hike (1.2.3)
-    json (1.8.1)
+    json (2.1.0)
     multi_json (1.8.2)
     rack (1.5.2)
     rack-protection (1.5.1)
@@ -37,7 +37,7 @@ DEPENDENCIES
   sprockets
 
 RUBY VERSION
-   ruby 2.0.0p648
+   ruby 2.3.3p222
 
 BUNDLED WITH
-   1.15.1
+   1.16.1
