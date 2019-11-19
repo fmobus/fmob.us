@@ -2,7 +2,7 @@ $:.unshift File.expand_path("../", __FILE__)
 
 require 'sinatra'
 require 'slim'
-require 'sass'
+require 'sassc'
 require 'sprockets'
 require 'json'
 

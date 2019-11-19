@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra'
 gem 'slim'
-gem 'sass'
+gem 'sassc'
 gem 'sprockets'
 gem 'json'
 gem 'shotgun'
