@@ -8,7 +8,7 @@ class Application < Sinatra::Base
   end
 
   get '/blog' do
-    redirect "http://blog.fmob.us"
+    redirect "https://blog.fmob.us"
   end
 
   get '/projects/:project' do
